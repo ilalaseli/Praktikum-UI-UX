@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Toko ilal</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background-color: #f4f4f4; }
+        .container { max-width: 900px; margin: 30px auto; background-color: white; border: 1px solid #ddd; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .header { display: flex; justify-content: space-between; padding-bottom: 10px; border-bottom: 1px solid #eee; margin-bottom: 20px; font-size: 14px; }
+        .header a { margin-left: 15px; text-decoration: none; color: #333; }
+        .content { display: flex; }
+        .left-panel { flex: 1; padding-right: 20px; }
+        .right-panel { flex: 1.5; padding-left: 20px; border-left: 1px solid #eee; }
+        .item-image { width: 80%; height: 200px; background-color: #f0f0f0; border: 1px dashed #ccc; display: flex; justify-content: center; align-items: center; margin-bottom: 15px; color: #888; }
+        .static-detail p { margin: 5px 0; font-size: 14px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px; }
+        .form-group input[type="text"], .form-group input[type="number"], .form-group select { width: 90%; padding: 8px; border: 1px solid #ccc; box-sizing: border-box; }
+        .radio-group label { font-weight: normal; margin-right: 15px; display: inline; }
+        .radio-group input[type="radio"] { margin-right: 5px; }
+        .submit-btn { text-align: right; margin-top: 30px; }
+        .submit-btn input[type="submit"] { background-color: green; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div>
+                <a href="#">Utama</a>
+                <a href="#">List Barang</a>
+                <a href="#">Riwayat Transaksi</a>
+                <a href="#">Review</a>
+            </div>
+            <a href="#">Keluar</a>
+        </div>
+
+        <form action="outputform hilal.html" target="_blank" method="GET">
+            <div class="content">
+                
+                <div class="left-panel">
+                    <h2>Alat Tempur Empang</h2>
+                    <p>Deskripsi Barang: Alat Pancing Full Set</p>
+                    
+                    <div class="item-image">
+                        <img src="foto pancingan.jpeg" 
+                        alt="Foto produk pancing" 
+                        width= 100% 
+                        height= 200px>
+                    </div>
+                    
+                    <div class="static-detail">
+                        <p><strong>Nama Barang:</strong> Alat Tempur Lengkap</p>
+                        <p><strong>Deskripsi:</strong> Alat pancing fullset</p>
+                        <p><strong>Kondisi:</strong> Used</p>
+                        <p><strong>Tahun:</strong> 2022</p>
+                        <p><strong>Harga:</strong> Rp.2,500,000</p>
+                    </div>
+                </div>
+
+                <div class="right-panel">
+                    <h3>Form Pemesanan</h3>
+
+                    <div class="form-group">
+                        <label for="acc_number">Nomor Akun</label>
+                        <input type="number" id="acc_number" name="acc_number" placeholder="123-456-789-0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Metode_pembayaran">Metode Bayar</label>
+                        <select id="Metode_pembayaran" name="Metode_pembayaran" required>
+                            <option value="">-- Pilih Metode pembayaran --</option>
+                            <option value="BCA">BCA</option>
+                            <option value="Mandiri">Mandiri</option>
+                            <option value="BRI">BRI</option>
+                            <option value="DANA">DANA</option>
+                            <option value="GOPAY">GOPAY</option>
+                            <option value="CASH">CASH</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="acc_holder">Pemilik Rek</label>
+                        <input type="text" id="acc_holder" name="acc_holder" placeholder="Nama Pemilik Rekening" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="trans_type">Tipe Transaksi</label>
+                        <select id="trans_type" name="trans_type" required>
+                            <option value="">-- Pilih Tipe Transaksi --</option>
+                            <option value="Deposit">Deposit</option>
+                            <option value="Transfer">Transfer</option>
+                            <option value="Cash">Cash</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tipe Pembayaran</label>
+                        <p style="font-size: 12px; margin-top: 5px;">*</p>
+                        <div class="radio-group">
+                            <input type="radio" id="Kirim_NoTelp" name="Tipe Pembayaran" value="NoTelp" checked>
+                            <label for="Kirim_NoTelp">Kirim Ke NoTelp</label>
+                            
+                            <input type="radio" id="Kirim_Email" name="Tipe Pembayaran" value="email">
+                            <label for="Kirim_Email">Kirim Ke Email</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nomor_telepon">Kirim ke nomor telepon</label>
+                        <input type="text" id="nomor_telepon" name="nomor_telepon" placeholder="08XXXXXXXXXX">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Kirim ke Email</label>
+                        <input type="email" id="email" name="email" placeholder="contoh@domain.com">
+                    </div>
+                </div>
+            </div>
+
+            <div class="submit-btn">
+                <input type="submit" value="Order Now">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
