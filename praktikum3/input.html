@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokai Teio Horse</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .profile-info {
+            flex-grow: 1;
+        }
+
+        .profile-info table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .main-article {
+            flex: 2;
+            padding-right: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            border-left: 1px solid #eee;
+            padding-left: 20px;
+        }
+        
+        .sidebar fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+
+        .link-group a {
+            display: block;
+            margin-bottom: 8px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        /* Gaya untuk tombol Download */
+        .download-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .download-btn:hover {
+            background-color: #218838;
+        }
+
+        .footer-gallery {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            margin-top: 20px;
+        }
+
+        .footer-gallery img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin: 0 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header class="header-content">
+            <img src="teio.png" alt="teio.png" class="profile-image">
+            
+            <div class="profile-info">
+                <table>
+                    <caption>PROFILE</caption>
+                    <tbody>
+                        <tr>
+                            <td>Nama: Tokai Teio</td>
+                            <td style="text-align: right;">Satsuki Sho</td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin: Stallion</td>
+                            <td style="text-align: right;">Tokyo Yushun</td>
+                        </tr>
+                        <tr>
+                            <td>Warna: Jragem</td>
+                            <td style="text-align: right;">Japan Cup</td>
+                        </tr>
+                        <tr>
+                            <td>Induk Pejantan: Symboli Rudolf</td>
+                            <td style="text-align: right;">Arima Kinen</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </header>
+
+        <div class="main-content">
+            
+            <div class="main-article">
+                <h2>ArimaKinen 1993</h2>
+                
+                <video controls width="100%" poster="video-thumbnail.jpg">
+                    <source src="teio.mp4" type="video/mp4">
+                </video>
+
+                <p style="margin-top: 15px;"></p>
+                
+                <h3>Tentang</h3>
+                <p>Tokai Teio (Jepang: トウカイテイオー, 20 April 1988 – 30 Agustus 2013) adalah kuda balap thoroughbred juara Jepang.Pada tahun 1991, ia memenangkan Satsuki Sho dan Tokyo Yushun. Ia dinobatkan sebagai Japanese Horse of the Year (Kuda Terbaik Jepang) tahun 1991.  Pada tahun 1992, ia memenangkan Japan Cup, di mana kuda-kuda juara seperti European Horse of the Year (Kuda Terbaik Eropa) dan Australian Champion Racehorse of the Year (Kuda Balap Juara Australia) turut berpartisipasi.Pada tahun 1993, setelah ia baru saja beristirahat dari cedera patah kaki selama setahun penuh (364 hari), ia memenangkan Arima Kinen.Tokai Teio dilantik ke dalam Japan Racing Association Hall of Fame pada tahun 1995.</p>
+
+            </div>
+            
+            <aside class="sidebar">
+                <fieldset>
+                    <legend>Menu</legend>
+                    <div class="link-group">
+                        <a href="#home">Beranda</a>
+                        <a href="#about">Info Kuda</a>
+                        <a href="#services">Arena Pacu</a>
+                        <a href="#contact">Catatan</a>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Sumber Daya</legend>
+                    <a href="dokumen-penting.pdf" download class="download-btn">
+                        📥 Unduh
+                    </a>
+                    <p style="font-size: 12px; margin-top: 5px;">File akan terunduh otomatis.</p>
+                </fieldset>
+            </aside>
+            
+        </div>
+
+        <footer class="footer-gallery">
+            <p>Galeri</p>
+            <img src="teio2.jpg" alt="Gambar 1">
+            <img src="teio3.jpg" alt="Gambar 2">
+            <img src="tokaiteio.jpg" alt="Gambar 3">
+            <img src="teiohorse.jpg" alt="Gambar 4">
+        </footer>
+
+    </div>
+
+</body>
+</html>
