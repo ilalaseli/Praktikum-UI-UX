@@ -1,0 +1,31 @@
+.wadah {
+    display: flex;
+    width: 800px;
+    height: 300px;
+    padding: 10px;
+    box-sizing: border-box
+}
+.kotak {
+    flex-grow: 1;
+    height: 100%; 
+    margin: 50px; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.burung1 {
+    background-image: url('../gambar/burung1.png'); 
+}
+
+.burung2 {
+    background-image: url('../gambar/burung4.png');
+}
+
+.burung3 {
+    background-image: url('../gambar/burung3.png');
+}
+
+.burung4 {
+    background-image: url('../gambar/burung5.jpg'); 
+}

@@ -1,0 +1,41 @@
+.kadal1 {
+    display: flex;
+    gap: 20px;
+}
+
+.kadal2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kadal3 {
+    display: flex;
+}
+
+.box1 {
+    background-color: yellow;
+    width: 250px;
+    height: 100px;
+}
+
+.box2 {
+    background-color: red;
+    width: 100%;
+    height: 100px;
+}
+
+.box3 {
+    background-color: green;
+    height: 700px;
+    width: 210px;
+}
+
+.box4 {
+    background-color: cyan;
+    height: 700px;
+    width: 210px;
+}
+footer {
+    background-color: blue;
+    height: 100px;
+}
