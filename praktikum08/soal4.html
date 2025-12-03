@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Jumlah Dua Bilangan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 250px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .operator, .equals {
+            display: block;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        #hasil {
+            font-weight: bold;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Menghitung Jumlah Dua Bilangan</h2>
+
+    <div class="container">
+        <input type="text" id="bilangan1" onchange="hitungJumlah()" value="4" placeholder="Masukkan angka">
+
+        <span class="operator">+</span>
+
+        <input type="text" id="bilangan2" onchange="hitungJumlah()" value="5" placeholder="Masukkan angka">
+
+        <span class="equals">=</span>
+
+        <input type="text" id="hasil" disabled value="9">
+    </div>
+
+    <p style="margin-top: 20px;"></p>
+
+    <script>
+        function hitungJumlah() {
+            const bil1String = document.getElementById('bilangan1').value;
+            const bil2String = document.getElementById('bilangan2').value;
+
+            const bil1 = parseFloat(bil1String) || 0;
+            const bil2 = parseFloat(bil2String) || 0;
+
+            const jumlah = bil1 + bil2;
+
+            document.getElementById('hasil').value = jumlah;
+        }
+
+        hitungJumlah(); 
+    </script>
+
+</body>
+</html>

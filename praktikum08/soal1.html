@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luas dan Keliling Lingkaran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        label, input, button, p {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        input[type="number"] {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+        }
+        .result strong {
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Luas dan Keliling Lingkaran</h2>
+
+    <div class="container">
+        <label for="jariJari">Masukkan Jari-Jari (r):</label>
+        <input type="number" id="jariJari" placeholder="Contoh: 7" value="7" min="0">
+
+        <button onclick="hitungLingkaran()">Hitung</button>
+
+        <div id="hasil" class="result">
+            <p><strong>Luas Lingkaran (A):</strong> <span id="luas">...</span></p>
+            <p><strong>Keliling Lingkaran (C):</strong> <span id="keliling">...</span></p>
+        </div>
+    </div>
+
+    <script>
+        function hitungLingkaran() {
+            const rString = document.getElementById('jariJari').value;
+
+            const r = parseFloat(rString);
+
+            if (isNaN(r) || r <= 0) {
+                document.getElementById('luas').textContent = "Input tidak valid";
+                document.getElementById('keliling').textContent = "Input tidak valid";
+                return; 
+            }
+
+            const PI = Math.PI;
+
+            const luas = PI * r * r; 
+
+            const keliling = 2 * PI * r;
+
+            document.getElementById('luas').textContent = luas.toFixed(2);
+            document.getElementById('keliling').textContent = keliling.toFixed(2);
+        }
+
+        hitungLingkaran(); 
+    </script>
+
+</body>
+</html>

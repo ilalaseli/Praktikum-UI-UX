@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JavaScript 2</title>
+    <style>
+        #kotak1{
+            width: 250px;
+            padding: 10px;
+            border: 2px solid #000;
+            border-radius: 12px;
+            background-color: gray;
+        }
+    </style>
+    <script>
+        function hitung(){
+            let bil1 = parseFloat(document.getElementById("bil1").value);
+            console.log("Bilangan 1: " + bil1);
+            let bil2 = parseFloat(document.getElementById("bil2").value);
+            let hasil = bil1 + bil2;
+            let area_hasil = document.getElementById("hasil");
+            area_hasil.innerText = hasil;
+        }
+        function makepink(){
+            let area_kotak1 = document.getElementById("kotak1");
+            area_kotak1.style.backgroundColor = "pink";
+        }
+        function makenormal(){
+            let area_kotak1 = document.getElementById("kotak1");
+            area_kotak1.style.backgroundColor = "#0f0f0f";
+        }
+        function run(){
+            alert("Selamat Datang di Halaman Kalkulator Sederhana");
+        }
+    </script>
+</head>
+<body onload="run()" style="background-color: yellow;">
+    <div id="kotak1" onmouseover="makepink()" onmouseout="makenormal()">
+        <h3>Kalkulator Penjumlahan Sederhana</h3>
+        Bilangan 1 : <input type="number" id="bil1" value="0"><br>
+        +<br>
+        Bilangan 2 : <input type="number" id="bil2" value="0"><br>
+        Hasil : <span id="hasil">0</span><br><br>
+        <button onclick="hitung()">Hitung</button>
+    </div>
+</body>
+</html>

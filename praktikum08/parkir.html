@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkir STT NF</title>
+</head>
+<body>
+    <h1>Harga Parkir STT NF</h1>
+    <label for="in">Jam Masuk : </label>
+    <input type="number" id="in">
+    <br>
+    <label for="out">Jam Keluar : </label>
+    <input type="number" id="out">
+    <br>
+    <span id="durasi"></span>
+    <br>
+    <span id="hasil"></span>
+    <br>
+    <button type="button" onclick="hitung_parkir()">Hitung</button>
+
+    <script>
+        function hitung_parkir(){
+            let jam_masuk = parseFloat(document.getElementById("in").value) || 0;
+            let jam_keluar = parseFloat(document.getElementById("out").value) || 0;
+            let durasi = jam_keluar - jam_masuk;
+
+            let tarif_awal = 3000;
+            let selisih_waktu = Math.round(durasi - 2);
+            let tarif_lanjut = selisih_waktu * 1000;
+            let total = tarif_awal - tarif_lanjut;
+
+            document.getElementById("durasi").innerHTML = "Durasi = Rp. " + durasi + " Jam";
+            document.getElementById("hasil").innerHTML = "Total Bayar = Rp. " + total;
+        }
+    </script>
+</body>
+</html>
