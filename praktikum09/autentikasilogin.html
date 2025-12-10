@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>autentikasi login gan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .login-box {
+            background-color: white;
+            padding: 30px;
+            border: 1px solid #ccc;
+            width: 300px;
+            text-align: center;
+        }
+        .login-box h2 {
+            margin-top: 0;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+        }
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .login-box button:hover {
+            background-color: #0056b3;
+        }
+        #message {
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px solid transparent;
+            display: none;
+        }
+        .success {
+            color: green;
+            border-color: green;
+            background-color: #e6ffe6;
+            display: block !important;
+        }
+        .failure {
+            color: red;
+            border-color: red;
+            background-color: #ffe6e6;
+            display: block !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-box">
+        <h2>Login Authentication</h2>
+        
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <button type="submit" id="loginButton">Login</button>
+        </form>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="otentikasilogin.js"></script>
+</body>
+</html>
