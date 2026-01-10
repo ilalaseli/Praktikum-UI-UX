@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mie Ayam Rusdi — Promo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <!-- Simple list navigation (no custom CSS/JS required) -->
+    <nav class="py-3 bg-light">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <a href="index.html" class="h5 text-decoration-none">MieAyamLezat</a>
+          </div>
+          <div>
+            <ul class="list-unstyled d-flex gap-3 mb-0">
+              <li><a href="index.html#features">Fitur</a></li>
+              <li><a href="about.html">Profil</a></li>
+              <li><a href="branches.html">Cabang</a></li>
+              <li><a href="promotions.html">Promosi</a></li>
+              <li><a href="contact.html">Kontak</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header / Image header perusahaan -->
+    <header class="py-4 bg-gradient text-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="display-6 fw-bold">Mie Ayam Rusdi - UMKM Kuliner</h1>
+            <p class="lead">Resep turun-temurun, bahan pilihan, dan layanan pesan-antar cepat.</p>
+            <a href="promotions.html" class="btn btn-warning me-2">Lihat Promo</a>
+            <a href="contact.html" class="btn btn-outline-light">Hubungi Kami</a>
+          </div>
+          <div class="col-lg-6 text-center">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container mt-4">
+      <!-- Breadcrumb component -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Promo & Informasi</li>
+        </ol>
+      </nav>
+
+      <!-- Carousel / Image Slider -->
+      <section class="mb-5">
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded shadow-sm">
+            <div class="carousel-item active">
+              <img src="data:image/jpeg;base64,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" class="d-block w-100 carousel-img" alt="Mie Ayam Original">
+            </div>
+            <div class="carousel-item">
+              <img src="https://awsimages.detik.net.id/community/media/visual/2022/10/12/resep-mie-ayam-kecap_43.jpeg?w=1200" class="d-block w-100 carousel-img" alt="Mie Ayam Spesial">
+            </div>
+            <div class="carousel-item">
+              <img src="https://static.uc.ac.id/fikom/2022/12/Pic-1.jpg" class="d-block w-100 carousel-img" alt="Mie Ayam Pedas">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Grid system usage: fitur + harga (form & table) -->
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <section id="features" class="mb-4">
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="card h-100 text-center p-3">
+                  <div class="card-body">
+                    <h5 class="card-title">Rasa Autentik</h5>
+                    <p class="card-text">Bumbu rempah khas, kuah gurih, dan suwiran ayam empuk.</p>
+                    <a href="about.html" class="btn btn-sm btn-primary">Selengkapnya</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card h-100 text-center p-3">
+                  <div class="card-body">
+                    <h5 class="card-title">Bahan Segar</h5>
+                    <p class="card-text">Sayuran segar dan ayam pilihan setiap hari.</p>
+                    <a href="branches.html" class="btn btn-sm btn-primary">Cabang</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card h-100 text-center p-3">
+                  <div class="card-body">
+                    <h5 class="card-title">Cepat & Terjangkau</h5>
+                    <p class="card-text">Siap saji dengan harga promo dan layanan pesan-antar.</p>
+                    <a href="promotions.html" class="btn btn-sm btn-primary">Promo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Tabel Harga (contoh table) -->
+          <section class="mb-4">
+            <h4>Tabel Harga</h4>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Produk</th>
+                    <th>Ukuran</th>
+                    <th>Harga</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Mie Ayam Original</td><td>Regular</td><td>Rp15.000</td></tr>
+                  <tr><td>Mie Ayam Spesial</td><td>Regular</td><td>Rp22.000</td></tr>
+                  <tr><td>Mie Ayam Pedas</td><td>Regular</td><td>Rp17.000</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- Testimoni section removed per user request -->
+        </div>
+
+        <!-- Right column: Owner profile (panel), booking form (form) -->
+        <aside class="col-lg-4">
+          <div class="card mb-4">
+            <div class="card-body text-center">
+              <h5 class="mb-1">M. Rusdi</h5>
+              <p class="text-muted small">Pemilik & Kepala Dapur</p>
+              <p class="small">Berpengalaman dalam meracik resep mie sejak 2005. Fokus pada kualitas rasa dan pelayanan.</p>
+            </div>
+          </div>
+
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Form Booking</h5>
+              <form id="bookingForm">
+                <div class="mb-2"><input class="form-control" name="nama" placeholder="Nama" required></div>
+                <div class="mb-2"><input class="form-control" name="telp" placeholder="No. WhatsApp" required></div>
+                <div class="mb-2"><select class="form-select" name="menu"><option>Mie Ayam Original</option><option>Mie Ayam Spesial</option><option>Mie Ayam Pedas</option></select></div>
+                <div class="d-grid"><button class="btn btn-success">Kirim Booking</button></div>
+              </form>
+            </div>
+          </div>
+
+          <div class="card mb-4">
+            <div class="card-body">
+              <h6 class="mb-2">Lokasi Singkat</h6>
+              <p class="small mb-1">Jl. hj atab, Kota Depok</p>
+              <p class="small mb-0">Buka: Senin–Minggu, 08:00–20:00</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Daftar cabang singkat -->
+      <section class="mt-5 mb-4">
+        <h4>Cabang Kami</h4>
+        <div class="row g-3">
+          <div class="col-md-4"><div class="p-3 border rounded"><strong>Cabang Pusat</strong><div class="text-muted">Jl. hj atab</div></div></div>
+          <div class="col-md-4"><div class="p-3 border rounded"><strong>Cabang Timur</strong><div class="text-muted">Jl. cilodong</div></div></div>
+          <div class="col-md-4"><div class="p-3 border rounded"><strong>Cabang Barat</strong><div class="text-muted">Jl. ciracas</div></div></div>
+        </div>
+      </section>
+
+      <!-- Tabel promosi ringkasan (link ke halaman promosi untuk detail) -->
+      <section class="mb-5">
+        <h4>Promo Pilihan</h4>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead><tr><th>Paket</th><th>Harga</th><th>Waktu</th><th>Syarat</th></tr></thead>
+            <tbody>
+              <tr><td>Paket Hemat</td><td>Rp40.000</td><td>Senin–Jumat</td><td>Minimal 2 porsi</td></tr>
+              <tr><td>Paket Keluarga</td><td>Rp120.000</td><td>Weekend</td><td>Untuk 4 orang</td></tr>
+              <tr><td>Promo Siang</td><td>Rp13.000/porsi</td><td>11:00–14:00</td><td>Tanpa tambahan</td></tr>
+              <tr><td>Paket Pedas</td><td>Rp50.000</td><td>Setiap hari</td><td>Level 3 ke atas</td></tr>
+              <tr><td>Combo Pangsit</td><td>Rp30.000</td><td>Setiap hari</td><td>Termasuk pangsit goreng</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <a href="promotions.html" class="btn btn-outline-primary">Lihat Semua Promosi</a>
+      </section>
+
+      <!-- Map embed -->
+      <section class="mb-5">
+        <h4>Lokasi Kami</h4>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.google.com/maps?q=Jakarta&output=embed" allowfullscreen></iframe>
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="py-4 bg-dark text-white mt-4">
+      <div class="container text-center">
+        <small>&copy; 2026 MieAyamLezat. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

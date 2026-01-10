@@ -1,0 +1,19 @@
+:root{
+  --brand:#d35400;
+  --accent:#ffc107;
+}
+body{font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+.bg-gradient{background:linear-gradient(135deg,#ff7a18 0%, #ffb199 100%);} 
+.header-img{max-width:100%;height:auto}
+.carousel-img{height:420px;object-fit:cover}
+.owner-img{width:96px;height:96px;object-fit:cover}
+
+@media (max-width: 767px){
+  .carousel-img{height:220px}
+}
+
+/* Minor card tweaks */
+.card img{object-fit:cover;height:200px}
+
+footer{font-size:.9rem}
+
